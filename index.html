@@ -389,6 +389,7 @@
     <!-- Section Footer -->
     <footer class="footer-page">
       <div class="container container-footer">
+        <!-- Group adress -->
         <div class="wrap-address">
           <a class="logo footer-logo link" href="./index.html"
             ><span class="logo-accent">Web</span>Studio</a
@@ -416,6 +417,7 @@
           </address>
         </div>
 
+        <!-- Group socials -->
         <div class="wrap-socials-footer">
           <h3 class="title-section title-section-socials">Приєднуйтесь</h3>
 
@@ -453,16 +455,85 @@
             </li>
           </ul>
         </div>
+
+        <!-- Group subscribe -->
+        <div class="wrap-form-footer">
+          <h3 class="title-section title-form-footer">Підпишіться на розсилку</h3>
+          <form name="subscribe">
+            <label for="user-email">E-mail</label>
+
+            <!-- TODO Прибрати переніс рядка -->
+            <br />
+            <input class="email" type="email" name="email" id="user-email" />
+            <button class="button button-form-footer primary" type="submit">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Modal window -->
+    <!-- <div class="backdrop is-hidden" data-modal> -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="btn-close-modal" type="button" data-modal-close>
           <svg class="icon-close-modal">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form name="call-back" class="call-back">
+          <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <div class="wrap-modal">
+            <label for="label-name-client" class="label-form">Ім'я</label>
+            <input
+              class="name-client input-form"
+              type="text"
+              name="name-client"
+              id="label-name-client"
+            />
+
+            <label for="label-phone-client" class="label-form">Телефон</label>
+            <input
+              class="phone-client input-form"
+              type="tel"
+              name="phone-client"
+              id="label-phone-client"
+            />
+
+            <label for="label-email-client" class="label-form">Пошта</label>
+            <input
+              class="email-client input-form"
+              type="email"
+              name="email-client"
+              id="label-email-client"
+            />
+
+            <label for="label-comment" class="label-form">Коментар</label>
+            <textarea
+              class="comment-client input-form"
+              name="comment"
+              rows="5"
+              placeholder="Введіть текст"
+              id="label-comment"
+            ></textarea>
+
+            <div class="wrap-license">
+              <input type="checkbox" name="license" value="true" id="label-license" />
+              <label class="label-license" for="label-license"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="link-license" href="">Умови договору</a>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="button button-modal primary">Відправити</button>
+        </form>
       </div>
     </div>
 
