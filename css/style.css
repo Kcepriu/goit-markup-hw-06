@@ -950,9 +950,9 @@ img {
   user-select: none;
 }
 
-.wrap-checkbox-license:focus-within .icon-checkbox {
+/* .wrap-checkbox-license:focus-within .icon-checkbox {
   outline: 2px solid var(--accent-color);
-}
+} */
 
 .link-license {
   color: var(--accent-color);
