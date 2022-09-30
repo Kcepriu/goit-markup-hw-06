@@ -877,6 +877,7 @@ img {
 
 .icon-input-modal {
   position: absolute;
+  /* TODO переробити на translate */
   left: 12px;
   top: 11px;
 
